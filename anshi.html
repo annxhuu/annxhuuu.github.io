@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ANNXHUU - Mood Scanner</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: black;
+  color: white;
+  text-align: center;
+  transition: 0.6s;
+}
+
+h1 {
+  margin-top: 50px;
+  font-size: 40px;
+  letter-spacing: 3px;
+  text-shadow: 0px 0px 15px #ff009d;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+#moodText {
+  margin-top: 40px;
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 0px 0px 12px white;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>ANNXHUU MOOD SCANNER 🔥</h1>
+
+<button onclick="setMood('cool')">😎 Cool</button>
+<button onclick="setMood('sleepy')">😴 Sleepy</button>
+<button onclick="setMood('angry')">😡 Angry</button>
+<button onclick="setMood('silent')">🤫 Silent</button>
+<button onclick="setMood('romantic')">❤️ Romantic</button>
+
+<p id="moodText">Tap any mood to reveal your inner vibe…</p>
+
+<script>
+function setMood(type) {
+  
+  if(type === 'cool') {
+    document.body.style.background = "#0f0f4f";
+    document.getElementById("moodText").innerHTML = "You're cold but classy. Power in silence 😎";
+  }
+
+  if(type === 'sleepy') {
+    document.body.style.background = "#1a1a1a";
+    document.getElementById("moodText").innerHTML = "Your soul needs rest… not people 😴";
+  }
+
+  if(type === 'angry') {
+    document.body.style.background = "#4f0000";
+    document.getElementById("moodText").innerHTML = "You're fire today. Don’t mess. 🔥";
+  }
+
+  if(type === 'silent') {
+    document.body.style.background = "#003300";
+    document.getElementById("moodText").innerHTML = "Your silence is louder than words. 🤫";
+  }
+
+  if(type === 'romantic') {
+    document.body.style.background = "#33001a";
+    document.getElementById("moodText").innerHTML = "Soft heart… strong feelings ❤️";
+  }
+}
+</script>
+
+</body>
+</html>
